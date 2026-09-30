@@ -1,0 +1,11 @@
+name: lmu_telemetry_analytics
+version: "1.0.0"
+config-version: 2
+
+profile: lmu_telemetry_analytics
+
+model-paths: ["models"]
+test-paths: ["tests/dbt"]
+clean-targets:
+  - "target"
+  - "dbt_packages"
