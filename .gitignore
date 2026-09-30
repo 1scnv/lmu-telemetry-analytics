@@ -94,12 +94,6 @@ ipython_config.py
 #   install all needed dependencies.
 # Pipfile.lock
 
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-# uv.lock
-
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
@@ -216,3 +210,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local AI context
+/ai_context/
+
+# Local telemetry and generated analytical data
+/data/raw/**
+!/data/raw/.gitkeep
+/data/processed/**
+!/data/processed/.gitkeep
+/data/local/**
+!/data/local/.gitkeep
+
+# dbt generated artifacts
+/target/
+/dbt_packages/
